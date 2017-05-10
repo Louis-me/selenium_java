@@ -199,7 +199,7 @@ public class LoginPageTest extends TestBaseSetup {
 
 * testng测试报告改造
 * 多设备
-* docket gird
+* docker gird
 
 
 
