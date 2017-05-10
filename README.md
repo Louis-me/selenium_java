@@ -192,6 +192,7 @@ public class LoginPageTest extends TestBaseSetup {
 ```
 
 **测试结果**
+
 ![](result.PNG)
 
 ## 后续版本
