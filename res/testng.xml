@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TesterHome">
+    <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+    <test name="登录">
+        <classes>
+            <class name="test.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="个人页面">
+        <classes>
+            <class name="test.MyinfoPageTest"/>
+        </classes>
+    </test>
+</suite>
+
