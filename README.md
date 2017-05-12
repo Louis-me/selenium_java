@@ -177,6 +177,9 @@ public class LoginPageTest extends TestBaseSetup {
     <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
     <parameter name="browserType" value="chrome"/>
     <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+    <listeners>
+        <listener class-name="util.ExtentTestNGIReporterListener"/> <!--ÅäÖÃ±¨¸æ¼àÌýÆ÷-->
+    </listeners>
     <test name="µÇÂ¼">
         <classes>
             <class name="test.LoginPageTest"/>
