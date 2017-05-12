@@ -191,9 +191,14 @@ public class LoginPageTest extends TestBaseSetup {
 
 ```
 
+
 **测试结果**
 
-![](result1.PNG)
+![](result2.PNG)
+
+# 其他
+
+查看我的[更新日志](chanelog.md)
 
 ## 后续版本
 
