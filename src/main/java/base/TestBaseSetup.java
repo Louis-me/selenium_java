@@ -1,17 +1,23 @@
 package base;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
+import java.io.File;
+
 
 public class TestBaseSetup {
     private WebDriver driver;
 //    static String driverPath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\";
 
-    public WebDriver getDriver() {
+    public  WebDriver getDriver() {
         return driver;
     }
 
@@ -47,6 +53,26 @@ public class TestBaseSetup {
         driver.navigate().to(appURL);
         return driver;
     }
+
+
+    /**
+     * This function will take screenshot
+     * @param webdriver
+     * @param fileWithPath
+     * @throws Exception
+     */
+    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+        //Convert web driver object to TakeScreenshot
+        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+        //Call getScreenshotAs method to create image file
+        File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+        //Move image file to new destination
+        File DestFile=new File(fileWithPath);
+        //Copy file at destination
+        FileUtils.copyFile(SrcFile, DestFile);
+
+    }
+
 
     @Parameters({ "browserType", "appURL" ,"driverPath"})
     @BeforeClass

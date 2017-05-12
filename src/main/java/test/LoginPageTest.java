@@ -7,8 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageobjects.LoginPage;
+
 import java.io.FileNotFoundException;
 
+//@Listeners(value= JyperionListener.class)
 
 public class LoginPageTest extends TestBaseSetup {
     private WebDriver driver;
@@ -17,7 +19,7 @@ public class LoginPageTest extends TestBaseSetup {
     public void setUp() {
         driver=getDriver();
     }
-    @Test
+    @Test(testName = "登录")
     public void testLogin() throws YamlException, FileNotFoundException {
         LoginPage loginPage = new LoginPage(this.driver, "/Login.yaml");
         loginPage.operate();

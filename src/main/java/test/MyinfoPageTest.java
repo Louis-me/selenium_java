@@ -11,9 +11,8 @@ import pageobjects.MyInfoPage;
 
 import java.io.FileNotFoundException;
 
-/**
- * Created by sWX458348 on 2017/5/10.
- */
+//@Listeners(value= JyperionListener.class)
+
 public class MyinfoPageTest extends TestBaseSetup {
     private WebDriver driver;
 
@@ -21,7 +20,7 @@ public class MyinfoPageTest extends TestBaseSetup {
     public void setUp() {
         driver=getDriver();
     }
-    @Test
+    @Test(testName = "个人中心")
     public void testMyInfo() throws YamlException, FileNotFoundException {
         LoginPage loginPage = new LoginPage(this.driver, "/Login.yaml");
         loginPage.operate();
@@ -30,4 +29,8 @@ public class MyinfoPageTest extends TestBaseSetup {
         myInfoPage.operate();
         Assert.assertTrue(myInfoPage.checkpoint(), "检查点不通过");
     }
+//    @AfterSuite
+//    public void tearDown(){
+//        sendPDFReportByGMail("sharkme.kun@foxmail.com", "dzwpoikdmgyycbah", "aaa@qq.com", "PDF Report", "test report");
+//    }
 }

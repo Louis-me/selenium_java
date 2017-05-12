@@ -193,11 +193,11 @@ public class LoginPageTest extends TestBaseSetup {
 
 **测试结果**
 
-![](result.PNG)
+![](result1.PNG)
 
 ## 后续版本
 
-* testng测试报告改造
+* 日志管理
 * 多设备
 * docker gird
 
