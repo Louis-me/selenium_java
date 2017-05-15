@@ -19,8 +19,8 @@ public class LoginPageTest extends TestBaseSetup {
     public void setUp() {
         driver=getDriver();
     }
-    @Test(testName = "登录")
-    public void testLogin() throws YamlException, FileNotFoundException {
+    @Test
+    public void testLogin() throws YamlException, FileNotFoundException, InterruptedException {
         LoginPage loginPage = new LoginPage(this.driver, "/Login.yaml");
         loginPage.operate();
         Assert.assertTrue(loginPage.checkpoint(), "检查点不通过");

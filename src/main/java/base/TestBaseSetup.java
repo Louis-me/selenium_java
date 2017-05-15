@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 
 public class TestBaseSetup {
@@ -37,7 +38,6 @@ public class TestBaseSetup {
 
 
     private static WebDriver initChromeDriver(String appURL, String driverPath) {
-        System.out.println("Launching google chrome with new profile..");
         System.setProperty("webdriver.chrome.driver", driverPath
                 + "chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -55,31 +55,11 @@ public class TestBaseSetup {
     }
 
 
-    /**
-     * This function will take screenshot
-     * @param webdriver
-     * @param fileWithPath
-     * @throws Exception
-     */
-    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
-        //Convert web driver object to TakeScreenshot
-        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
-        //Call getScreenshotAs method to create image file
-        File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-        //Move image file to new destination
-        File DestFile=new File(fileWithPath);
-        //Copy file at destination
-        FileUtils.copyFile(SrcFile, DestFile);
-
-    }
-
-
     @Parameters({ "browserType", "appURL" ,"driverPath"})
     @BeforeClass
     public void initializeTestBaseSetup(String browserType, String appURL, String driverPath) {
         try {
             setDriver(browserType, appURL, driverPath);
-
         } catch (Exception e) {
             System.out.println("Error....." + e.getStackTrace());
         }

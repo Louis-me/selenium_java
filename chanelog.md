@@ -9,6 +9,9 @@
 # 2017-5-12 更新历史
 * 更新了测试报告使用[extentreports](http://extentreports.com/)
 
+# 2017-5-15 更新历史
+* 更新log4j记录日志
+
 
 **测试结果**
 

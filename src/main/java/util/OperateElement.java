@@ -3,10 +3,7 @@ import model.CheckPoint;
 import model.TestCase;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * 常用元素操作类
@@ -17,6 +14,7 @@ public class OperateElement {
     private static final String NAME  = "name";
     private static final String XPATH  = "xpath";
     private static final String CLASSNAME  = "className";
+    private static final String CSSSELECTOR  = "cssSelector";
     private static final String ID  = "id";
 
 
@@ -32,28 +30,37 @@ public class OperateElement {
      * @param checkPoint 检查点实体类
      * @return
      */
-    public boolean checkElement(CheckPoint checkPoint) {
-        By by = getElement(checkPoint.getFind_type(),checkPoint.getElement_info());
+    public Boolean checkElement(CheckPoint checkPoint) throws InterruptedException {
+        final By by = getElement(checkPoint.getFind_type(), checkPoint.getElement_info());
         boolean status = false;
-        try {
-            if (checkPoint.getOperate_type() == null) { // Operate_type为空的话，默认就是find查找
-                driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
-                driver.findElement(by);
-                status = true;
-            } else if((checkPoint.getOperate_type().equals("getValue") && checkPoint.getText() != null)) { //具体检查点
-                status = driver.findElement(by).getAttribute("value").equals(checkPoint.getText());
-            } else {
-                status = false;
-            }
-            return status;
-        } catch (TimeoutException e) {
-            System.out.println("查找元素超时");
-            return false;
+        if (checkPoint.getOperate_type() == null) { // Operate_type为空的话，默认就是find查找
 
-        } catch (NoSuchElementException e) {
-            System.out.println("元素不存在");
-            return false;
+            WebElement element = new WebDriverWait(driver, 10)
+                    .until(new ExpectedCondition<WebElement>() {
+                        @Override
+                        public WebElement apply(WebDriver d) {
+                            //此处可以随意扩展用xpath或是其他方式初始化。由于我只用xpath,就不写了。
+                            try {
+                                WebElement e = d.findElement(by);
+                                return e;
+                            } catch (TimeoutException e) {
+                                System.out.println("元素找不到");
+                                return null;
+                            } catch (NoSuchElementException e) {
+                                // DO NOTHING. 继续循环
+                                return null;
+                            }
+                        }
+
+                    });
+           return element.isDisplayed();
+        } else if ((checkPoint.getOperate_type().equals("getValue") && checkPoint.getText() != null)) { //具体检查点
+            status = driver.findElement(by).getAttribute("value").equals(checkPoint.getText());
+            System.out.println("查找点为=" + checkPoint.getText());
+        } else {
+            status = false;
         }
+        return status;
     }
 
     /***
@@ -73,10 +80,11 @@ public class OperateElement {
         } else if (find_type.equals(XPATH)) {
             by = By.xpath(element_info);
 
+        } else if(find_type.equals(CSSSELECTOR)) {
+            by = new By.ByCssSelector(element_info);
         } else {
             System.out.println("不支持其他操作方法");
         }
-        System.out.println(by);
         return by;
     }
 
@@ -90,7 +98,7 @@ public class OperateElement {
      * 实体类
      * @param testCase
      */
-    public void operate(TestCase testCase) {
+    public boolean operate(TestCase testCase) throws InterruptedException {
 
         CheckPoint checkPoint = new CheckPoint();
         checkPoint.setFind_type(testCase.getFind_type());
@@ -99,12 +107,19 @@ public class OperateElement {
         if (check) {
             By by = getElement(testCase.getFind_type(),testCase.getElement_info());
             WebElement webElement = setElement(by);
-            if (testCase.getOperate_type().equals("click")) {webElement.click();}
-            else if(testCase.getOperate_type().equals("send_keys")) {webElement.sendKeys(testCase.getText());}
+            if (testCase.getOperate_type().equals("click")) {
+                webElement.click();
+                System.out.println("点击了=="+testCase.getElement_info());
+            }
+            else if(testCase.getOperate_type().equals("send_keys")) {
+                webElement.sendKeys(testCase.getText());
+                System.out.println("输入内容=="+testCase.getText() );
+            }
             else { System.out.println("不支持其他操作方法");}
         } else {
-            System.out.println("元素不存在");
+            System.out.println(testCase.getElement_info()+"==元素不存在");
         }
+        return check;
     }
 
 }

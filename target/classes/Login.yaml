@@ -10,8 +10,11 @@ testcase:
     - element_info: //*[@id="new_user"]/div[4]/input
       find_type: xpath
       operate_type: click
+    - element_info: /html/body/div[1]/nav/div/ul[1]/li
+      find_type: xpath
+      operate_type: click
 check:
-    - element_info: /html/body/div[1]/nav/div/ul[1]/li/a/img
+    - element_info: //a[contains(text(),"lose")]
       find_type: xpath
-    - element_info: /html/body/div[1]/nav/div/ul[2]/li[2]/a
-      find_type: xpath
+#    - element_info: /html/body/div[1]/nav/div/ul[2]/li[2]/a
+#      find_type: xpath

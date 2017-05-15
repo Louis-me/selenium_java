@@ -1,0 +1,10 @@
+testcase:
+    - element_info: //*[@id="main-nav-menu"]/ul/li[1]
+      find_type: xpath
+      operate_type: click
+    - element_info: /html/body/div[1]/nav/div/ul[1]/li/ul/li[3]
+      find_type: xpath
+      operate_type: click
+check:
+    - element_info: //*[@id="main"]//a[contains(@title, "loadrunner 和 jmeter 大 PK")]
+      find_type: xpath

@@ -16,6 +16,7 @@ public class MyInfoPage {
     YamlRead yamlRead;
     OperateElement operateElement;
     protected WebDriver driver;
+    private boolean isOperate = true;
 
 
     public MyInfoPage(WebDriver driver){
@@ -32,7 +33,7 @@ public class MyInfoPage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public void operate() throws YamlException, FileNotFoundException {
+    public void operate() throws YamlException, FileNotFoundException, InterruptedException {
         List list = (List) yamlRead.getYmal().get("testcase");
         for(Object item: list){
             TestCase testCase = new TestCase();
@@ -40,7 +41,12 @@ public class MyInfoPage {
             testCase.setElement_info((String) ((Map)item).get("element_info"));
 //            testCase.setText((String) ((Map)item).get("text"));
             testCase.setOperate_type((String) ((Map)item).get("operate_type"));
-            operateElement.operate(testCase);
+            if (!operateElement.operate(testCase)) {
+                isOperate = false;
+                System.out.println("操作失败");
+                break;
+            }
+            Thread.sleep(2000);
         }
     }
 
@@ -50,7 +56,11 @@ public class MyInfoPage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public boolean checkpoint() throws YamlException, FileNotFoundException {
+    public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
+        if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
+            System.out.println("操作步骤失败了");
+            return false;
+        }
         List list = (List) yamlRead.getYmal().get("check");
 //        System.out.println(list);
         for(Object item: list){
@@ -65,4 +75,5 @@ public class MyInfoPage {
         }
         return true;
     }
+
 }

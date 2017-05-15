@@ -1,12 +1,9 @@
 testcase:
-    - element_info: /html/body/div[1]/nav/div/ul[1]/li/a/img
-      find_type: xpath
-      operate_type: click
-    - element_info: /html/body/div[1]/nav/div/ul[1]/li/ul/li[3]
+    - element_info: //a[contains(text(), "个人资料设置")]
       find_type: xpath
       operate_type: click
 check:
     - element_info: user_name
       operate_type: getValue
       find_type: id
-      text: 测试小书童1
+      text: 测试小书童
