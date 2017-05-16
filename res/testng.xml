@@ -15,7 +15,6 @@
     <test name="社区">
         <classes>
             <class name="test.MyinfoPageTest"/>
-            <!--<class name="test.CommunityPageTest" />-->
         </classes>
     </test>
     <!--<test name="精选帖子">-->

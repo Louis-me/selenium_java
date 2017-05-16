@@ -46,7 +46,6 @@ public class LoginPage {
                 System.out.println("操作失败");
                 break;
             }
-            Thread.sleep(2000);
 //            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         }

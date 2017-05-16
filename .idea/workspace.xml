@@ -2,32 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281de749-23a7-45a8-9c3c-5cfcaea44ef2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/logs/debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/logs/error.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/res/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/CommunityPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/CommunityPageTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/util/TestMonitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/src/main/resources/Community.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/base/TestBaseSetup.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/base/TestBaseSetup.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/OperateElement$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/LoginPage.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test/LoginPageTest.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test/LoginPageTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test/MyinfoPageTest.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test/MyinfoPageTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/MyInfoPage.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/MyInfoPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/OperateElement.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/OperateElement.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/logs/debug.log" afterPath="$PROJECT_DIR$/../selenium_java/logs/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/logs/error.log" afterPath="$PROJECT_DIR$/../selenium_java/logs/error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/res/testng.xml" afterPath="$PROJECT_DIR$/../selenium_java/res/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/util/ExtentTestNGIReporterListener.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/util/ExtentTestNGIReporterListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" afterPath="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" afterPath="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/MyInfo.yaml" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/MyInfo.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/test-output/Extent.html" afterPath="$PROJECT_DIR$/../selenium_java/test-output/Extent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/Login.yaml" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/Login.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/test-output/index.html" afterPath="$PROJECT_DIR$/../selenium_java/test-output/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/../selenium_java/out/" />
     <ignored path="$PROJECT_DIR$/../selenium_java/target/" />
@@ -39,7 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/selenium_java$D__selenium_java_res_testng_xml.coverage" NAME="$PROJECT_DIR$/../selenium_java/res/testng.xml Coverage Results" MODIFIED="1494846811889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/selenium_java$D__selenium_java_res_testng_xml.coverage" NAME="$PROJECT_DIR$/../selenium_java/res/testng.xml Coverage Results" MODIFIED="1494908479090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -47,18 +35,8 @@
       <file leaf-file-name="MyInfo.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDFReportByGMail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/util/PDFReportByGMail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="29" column="77" lean-forward="false" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -67,27 +45,8 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debug.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../selenium_java/logs/debug.log">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../selenium_java/logs/error.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,18 +55,42 @@
       <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/res/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="181">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="1140">
+              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperateElement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -116,12 +99,10 @@
       <file leaf-file-name="MyInfoPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="103">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,12 +111,9 @@
       <file leaf-file-name="LoginPageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding>
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,8 +121,18 @@
       <file leaf-file-name="MyinfoPageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="203">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBaseSetup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,10 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>---</find>
-      <find>----------</find>
-      <find>----operate1------</find>
-      <find>----operate-----</find>
       <find>----operate------</find>
       <find>operate</find>
       <find>----operate2------</find>
@@ -188,11 +172,15 @@
       <find>找</find>
       <find>/html/body/div[1]/nav/div/ul[1]/li/a</find>
       <find>//a[contains(text(), &quot;个人资料设置&quot;)]</find>
-      <find>元素</find>
       <find>10</find>
       <find>元</find>
       <find>检查点</find>
+      <find>找到</find>
       <find>点击</find>
+      <find>元素</find>
+      <find>点击了</find>
+      <find>元素不可见为</find>
+      <find>不</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,18 +233,18 @@
         <option value="$PROJECT_DIR$/../selenium_java/logs/debug.log" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/util/ExtentTestNGIReporterListener.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Community.yaml" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/CommunityPage.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/test/CommunityPageTest.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/res/testng.xml" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" />
         <option value="$PROJECT_DIR$/../selenium_java/logs/error.log" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" />
+        <option value="$PROJECT_DIR$/../selenium_java/res/testng.xml" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" />
       </list>
     </option>
   </component>
@@ -280,10 +268,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -326,9 +312,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -547,6 +530,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -946,40 +932,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 03m 40s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 05m 48s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 03m 41s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 06m 18s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 11m 24s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 12m 53s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 11m 25s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 13m 29s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 12m 56s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 17m 37s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 13m 00s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 18m 50s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 13m 29s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 19m 30s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 14m 14s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 20m 34s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 14m 15s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 21m 07s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.15 at 19h 15m 56s.xml">
+    <history-entry file="D__selenium_java_res_testng_xml - 2017.05.16 at 12h 21m 49s.xml">
       <configuration name="D:/selenium_java/res/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -991,13 +976,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41167194" sideWeight="0.52342606" order="7" side_tool="true" content_ui="tabs" x="0" y="156" width="1366" height="416" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6198738" sideWeight="0.47657394" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5420712" sideWeight="0.47657394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24592593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1140,7 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,7 +1133,7 @@
         <state relative-caret-position="61">
           <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#5913#5926#0" expanded="false" />
           </folding>
         </state>
@@ -1159,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,7 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="551" column="0" lean-forward="false" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,11 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="e#3415#3416#0" expanded="true" />
-            <element signature="e#3451#3452#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,9 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#985#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="84" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1216,7 @@
         <state relative-caret-position="513">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1259,90 +1229,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#1119#1872#0" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/util/PDFReportByGMail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="285">
           <caret line="29" column="77" lean-forward="false" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1356,31 +1246,101 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../selenium_java/logs/debug.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
+      <provider editor-type-id="LargeFileEditor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="261155">
-          <caret line="13745" column="52" lean-forward="false" selection-start-line="13745" selection-start-column="51" selection-end-line="13745" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/res/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../selenium_java/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="1140">
+          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/res/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

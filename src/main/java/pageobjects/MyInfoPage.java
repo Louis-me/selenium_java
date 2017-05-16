@@ -46,7 +46,6 @@ public class MyInfoPage {
                 System.out.println("操作失败");
                 break;
             }
-            Thread.sleep(2000);
         }
     }
 

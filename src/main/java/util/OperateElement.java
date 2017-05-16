@@ -5,6 +5,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * 常用元素操作类
  */
@@ -32,29 +34,13 @@ public class OperateElement {
      */
     public Boolean checkElement(CheckPoint checkPoint) throws InterruptedException {
         final By by = getElement(checkPoint.getFind_type(), checkPoint.getElement_info());
-        boolean status = false;
-        if (checkPoint.getOperate_type() == null) { // Operate_type为空的话，默认就是find查找
-
-            WebElement element = new WebDriverWait(driver, 10)
-                    .until(new ExpectedCondition<WebElement>() {
-                        @Override
-                        public WebElement apply(WebDriver d) {
-                            //此处可以随意扩展用xpath或是其他方式初始化。由于我只用xpath,就不写了。
-                            try {
-                                WebElement e = d.findElement(by);
-                                return e;
-                            } catch (TimeoutException e) {
-                                System.out.println("元素找不到");
-                                return null;
-                            } catch (NoSuchElementException e) {
-                                // DO NOTHING. 继续循环
-                                return null;
-                            }
-                        }
-
-                    });
-           return element.isDisplayed();
-        } else if ((checkPoint.getOperate_type().equals("getValue") && checkPoint.getText() != null)) { //具体检查点
+        boolean status = true;
+            while(!isByPresent(driver, by)){
+                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            }
+            if (checkPoint.getOperate_type() == null) { // Operate_type为空的话，默认就是find查找
+                return status;
+            } else if ((checkPoint.getOperate_type().equals("getValue") && checkPoint.getText() != null)) { //具体检查点
             status = driver.findElement(by).getAttribute("value").equals(checkPoint.getText());
             System.out.println("查找点为=" + checkPoint.getText());
         } else {
@@ -93,18 +79,28 @@ public class OperateElement {
         return webElement;
 
     }
-
+    public boolean isByPresent(WebDriver chrome, By by){
+        boolean display = false;
+        try{
+            chrome.findElement(by).isDisplayed();
+            return display= true;
+        }catch(NoSuchElementException e){
+            return display;
+        } catch (ElementNotVisibleException e) {
+            return display;
+        }
+    }
     /***
      * 实体类
      * @param testCase
      */
     public boolean operate(TestCase testCase) throws InterruptedException {
-
         CheckPoint checkPoint = new CheckPoint();
         checkPoint.setFind_type(testCase.getFind_type());
         checkPoint.setElement_info(testCase.getElement_info());
         boolean check =  checkElement(checkPoint);
         if (check) {
+            Thread.sleep(800);
             By by = getElement(testCase.getFind_type(),testCase.getElement_info());
             WebElement webElement = setElement(by);
             if (testCase.getOperate_type().equals("click")) {
@@ -123,4 +119,3 @@ public class OperateElement {
     }
 
 }
-
