@@ -25,4 +25,4 @@
 
 **²âÊÔ½á¹û**
 
-![](result2.PNG)
+![](img/result2.PNG)
