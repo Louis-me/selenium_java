@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="18.546" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\app\Java\jdk1.8.0_111\jre\bin"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\selenium_java"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\selenium_java"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\app\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SWX458~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\app\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\app\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\exe\ConEmuPack.170402\ConEmu\Scripts;D:\exe\ConEmuPack.170402;D:\exe\ConEmuPack.170402\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;D:\app\Java\jdk1.8.0_111\bin;D:\app\ApkToolkit\bin;D:\app\Python34;D:\app\Python34\Scripts;D:\app\PICT\;D:\app\TortoiseSVN\bin;D:\app\mysql-5.7.17-winx64\bin;D:\app\apache-maven-3.5.0\bin;d:\app\Git\cmd;C:\Program Files\Oracle\VirtualBox;D:\app\apache-maven-3.5.0\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;D:\app\Java\jdk1.8.0_111\bin;D:\app\ApkToolkit\bin;D:\app\Python34;D:\app\Python34\Scripts;D:\app\PICT\;D:\app\TortoiseSVN\bin;D:\app\mysql-5.7.17-winx64\bin;C:\Program Files (x86)\Spoon\Cmd;C:\Users\swx458348\.babun;d:\app\Docker Toolbox;."/>
+    <property name="maven.conf" value="D:\app\apache-maven-3.5.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="D:\app\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\swx458348"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="sWX458348"/>
+    <property name="java.class.path" value="D:\app\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\app\Java\jdk1.8.0_111\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="D:\app\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\app\Java\jdk1.8.0_111\jre\lib\resources.jar;D:\app\Java\jdk1.8.0_111\jre\lib\rt.jar;D:\app\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;D:\app\Java\jdk1.8.0_111\jre\lib\jsse.jar;D:\app\Java\jdk1.8.0_111\jre\lib\jce.jar;D:\app\Java\jdk1.8.0_111\jre\lib\charsets.jar;D:\app\Java\jdk1.8.0_111\jre\lib\jfr.jar;D:\app\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\app\apache-maven-3.5.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testLogin" classname="test.LoginPageTest" time="4.686"/>
+  <testcase name="testMyInfo" classname="test.MyinfoPageTest" time="6.775">
+    <failure message="检查点不通过 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 检查点不通过 expected [true] but found [false]
+	at test.MyinfoPageTest.testMyInfo(MyinfoPageTest.java:30)
+</failure>
+    <system-out><![CDATA[[DEBUG] 2017-05-23 17:06:20,050 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:20,050 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:20,050 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:39184][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,050 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 42][route: {}->http://localhost:39184][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:20,051 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:39184
+[DEBUG] 2017-05-23 17:06:20,051 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:39184
+[DEBUG] 2017-05-23 17:06:20,052 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64505<->127.0.0.1:39184
+[DEBUG] 2017-05-23 17:06:20,053 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-42: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:20,053 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request DELETE /session/58ca601708fadf1cf0ff84fbf6e5452b HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-42 >> DELETE /session/58ca601708fadf1cf0ff84fbf6e5452b HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-42 >> Host: localhost:39184
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-42 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-42 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:20,054 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-42 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:20,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "DELETE /session/58ca601708fadf1cf0ff84fbf6e5452b HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "Host: localhost:39184[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,056 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,190 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,191 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 << "Content-Length:72[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,191 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,191 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,191 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-42 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,191 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-42 << "{"sessionId":"58ca601708fadf1cf0ff84fbf6e5452b","status":0,"value":null}"
+[DEBUG] 2017-05-23 17:06:20,192 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-42 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:20,192 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-42 << Content-Length:72
+[DEBUG] 2017-05-23 17:06:20,192 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-42 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,192 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-42 << Connection:close
+[DEBUG] 2017-05-23 17:06:20,193 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-42: Close connection
+[DEBUG] 2017-05-23 17:06:20,193 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:20,193 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 42][route: {}->http://localhost:39184][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,195 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeIdleConnections(PoolingHttpClientConnectionManager.java:407)
+Closing connections idle longer than 0 SECONDS
+[DEBUG] 2017-05-23 17:06:20,381 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:20,382 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:20,382 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,382 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 43][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:20,382 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:20,383 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,384 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64508<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,384 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-43: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:20,384 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,384 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,384 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-43 >> POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> Content-Length: 68
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:20,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:20,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-43 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:20,386 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,386 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,386 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "Content-Length: 68[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,394 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,395 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,396 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,397 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,397 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,397 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-43 >> "{"using":"xpath","value":"//a//img[contains(@class,\"avatar-32\")]"}"
+[DEBUG] 2017-05-23 17:06:20,409 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,409 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 << "Content-Length:102[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,410 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,410 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,410 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-43 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,410 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-43 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":{"ELEMENT":"0.4487836547151227-4"}}"
+[DEBUG] 2017-05-23 17:06:20,410 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-43 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:20,411 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-43 << Content-Length:102
+[DEBUG] 2017-05-23 17:06:20,411 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-43 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,411 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-43 << Connection:close
+[DEBUG] 2017-05-23 17:06:20,411 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-43: Close connection
+[DEBUG] 2017-05-23 17:06:20,412 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:20,412 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 43][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,413 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:20,414 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:20,414 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,414 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 44][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:20,414 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:20,414 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,415 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64509<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,415 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-44: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:20,415 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-4/click HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,415 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,415 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-44 >> POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-4/click HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> Content-Length: 29
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:20,416 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:20,417 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-44 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:20,417 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-4/click HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "Content-Length: 29[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,418 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,419 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-44 >> "{"id":"0.4487836547151227-4"}"
+[DEBUG] 2017-05-23 17:06:20,484 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 << "Content-Length:72[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-44 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-44 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":null}"
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-44 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:20,485 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-44 << Content-Length:72
+[DEBUG] 2017-05-23 17:06:20,486 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-44 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,486 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-44 << Connection:close
+[DEBUG] 2017-05-23 17:06:20,486 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-44: Close connection
+[DEBUG] 2017-05-23 17:06:20,486 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:20,486 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 44][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+点击了==//a//img[contains(@class,"avatar-32")]
+{check=[{element_info=user_name, operate_type=getValue, find_type=id, text=测试小书童123}], testcase=[{element_info=//a[contains(text(), "个人资料设置")], find_type=xpath, operate_type=click}]}
+[DEBUG] 2017-05-23 17:06:20,490 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:20,490 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:20,491 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,491 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 45][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:20,491 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:20,492 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,492 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64510<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-45: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-45 >> POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> Content-Length: 73
+[DEBUG] 2017-05-23 17:06:20,493 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-45 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "Content-Length: 73[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,494 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,495 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-45 >> "{"using":"xpath","value":"//a[contains(text(), \"[0xe4][0xb8][0xaa][0xe4][0xba][0xba][0xe8][0xb5][0x84][0xe6][0x96][0x99][0xe8][0xae][0xbe][0xe7][0xbd][0xae]\")]"}"
+[DEBUG] 2017-05-23 17:06:20,513 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,513 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 << "Content-Length:102[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-45 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-45 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":{"ELEMENT":"0.4487836547151227-5"}}"
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-45 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:20,514 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-45 << Content-Length:102
+[DEBUG] 2017-05-23 17:06:20,515 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-45 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,515 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-45 << Connection:close
+[DEBUG] 2017-05-23 17:06:20,515 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-45: Close connection
+[DEBUG] 2017-05-23 17:06:20,515 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:20,516 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 45][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,518 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:20,518 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:20,519 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:20,519 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 46][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:20,519 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:20,520 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,520 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64511<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:20,520 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-46: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/displayed HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-46 >> GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/displayed HTTP/1.1
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-46 >> Cache-Control: no-cache
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-46 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-46 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-46 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:20,521 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-46 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/displayed HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "Cache-Control: no-cache[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,522 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,549 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,549 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 << "Content-Length:72[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,549 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,549 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-46 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-46 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":true}"
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-46 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-46 << Content-Length:72
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-46 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:20,550 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-46 << Connection:close
+[DEBUG] 2017-05-23 17:06:20,551 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-46: Close connection
+[DEBUG] 2017-05-23 17:06:20,551 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:20,551 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 46][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:21,353 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:21,353 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:21,354 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:21,354 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 47][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:21,354 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:21,355 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,355 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64512<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,356 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-47: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:21,356 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,356 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,356 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,357 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-47 >> POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,357 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:21,357 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> Content-Length: 73
+[DEBUG] 2017-05-23 17:06:21,357 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:21,357 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:21,358 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:21,358 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-47 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:21,358 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,358 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,358 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "Content-Length: 73[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,359 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,359 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,359 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,359 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,359 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,360 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-47 >> "{"using":"xpath","value":"//a[contains(text(), \"[0xe4][0xb8][0xaa][0xe4][0xba][0xba][0xe8][0xb5][0x84][0xe6][0x96][0x99][0xe8][0xae][0xbe][0xe7][0xbd][0xae]\")]"}"
+[DEBUG] 2017-05-23 17:06:21,375 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,376 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 << "Content-Length:102[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,377 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,377 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,377 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-47 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,377 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-47 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":{"ELEMENT":"0.4487836547151227-5"}}"
+[DEBUG] 2017-05-23 17:06:21,377 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-47 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:21,378 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-47 << Content-Length:102
+[DEBUG] 2017-05-23 17:06:21,378 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-47 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:21,378 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-47 << Connection:close
+[DEBUG] 2017-05-23 17:06:21,379 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-47: Close connection
+[DEBUG] 2017-05-23 17:06:21,379 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:21,379 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 47][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:21,382 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:21,382 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:21,382 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:21,383 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 48][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:21,383 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:21,383 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,384 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64513<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-48: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:21,385 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/click HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,385 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,385 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,385 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-48 >> POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/click HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> Content-Length: 29
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:21,386 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-48 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:21,387 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-5/click HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,387 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,387 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "Content-Length: 29[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,387 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,388 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,388 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,388 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,388 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,388 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-48 >> "{"id":"0.4487836547151227-5"}"
+[DEBUG] 2017-05-23 17:06:21,469 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,469 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 << "Content-Length:72[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,469 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,469 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,469 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-48 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,470 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-48 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":null}"
+[DEBUG] 2017-05-23 17:06:21,470 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-48 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:21,470 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-48 << Content-Length:72
+[DEBUG] 2017-05-23 17:06:21,470 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-48 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:21,470 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-48 << Connection:close
+[DEBUG] 2017-05-23 17:06:21,471 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-48: Close connection
+[DEBUG] 2017-05-23 17:06:21,471 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:21,471 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 48][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+点击了==//a[contains(text(), "个人资料设置")]
+{check=[{element_info=user_name, operate_type=getValue, find_type=id, text=测试小书童123}], testcase=[{element_info=//a[contains(text(), "个人资料设置")], find_type=xpath, operate_type=click}]}
+[DEBUG] 2017-05-23 17:06:21,475 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:21,475 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:21,475 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:21,475 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 49][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:21,475 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:21,476 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,477 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64514<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:21,478 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-49: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:21,478 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,478 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,478 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-49 >> POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> Content-Length: 34
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-49 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "Content-Length: 34[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,479 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,480 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,480 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,481 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,481 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,481 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-49 >> "{"using":"id","value":"user_name"}"
+[DEBUG] 2017-05-23 17:06:21,998 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,998 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 << "Content-Length:102[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,998 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,999 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,999 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-49 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:21,999 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-49 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":{"ELEMENT":"0.4487836547151227-6"}}"
+[DEBUG] 2017-05-23 17:06:21,999 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-49 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:21,999 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-49 << Content-Length:102
+[DEBUG] 2017-05-23 17:06:22,000 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-49 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:22,000 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-49 << Connection:close
+[DEBUG] 2017-05-23 17:06:22,000 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-49: Close connection
+[DEBUG] 2017-05-23 17:06:22,000 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:22,001 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 49][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,002 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:22,003 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:22,003 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,003 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 50][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:22,003 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:22,004 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,005 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64515<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,006 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-50: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:22,006 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/displayed HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,006 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,006 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,006 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-50 >> GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/displayed HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-50 >> Cache-Control: no-cache
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-50 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-50 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-50 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-50 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/displayed HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "Cache-Control: no-cache[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,007 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,008 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,008 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,008 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,034 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,035 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 << "Content-Length:72[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,035 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,035 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,035 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-50 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-50 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":true}"
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-50 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-50 << Content-Length:72
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-50 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-50 << Connection:close
+[DEBUG] 2017-05-23 17:06:22,036 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-50: Close connection
+[DEBUG] 2017-05-23 17:06:22,037 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:22,037 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 50][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,038 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:22,038 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:22,039 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,039 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 51][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:22,039 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:22,039 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,039 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64516<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-51: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-51 >> POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> Content-Type: application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> Content-Length: 34
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:22,040 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-51 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "POST /session/fe70c659329198dad18b96e61a9f502f/element HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "Content-Length: 34[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,041 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,042 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-51 >> "{"using":"id","value":"user_name"}"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 << "Content-Length:102[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-51 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-51 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":{"ELEMENT":"0.4487836547151227-6"}}"
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-51 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-51 << Content-Length:102
+[DEBUG] 2017-05-23 17:06:22,055 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-51 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:22,056 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-51 << Connection:close
+[DEBUG] 2017-05-23 17:06:22,056 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-51: Close connection
+[DEBUG] 2017-05-23 17:06:22,056 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:22,056 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 51][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,058 method:org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123)
+CookieSpec selected: default
+[DEBUG] 2017-05-23 17:06:22,058 method:org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77)
+Auth cache not set in the context
+[DEBUG] 2017-05-23 17:06:22,058 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:255)
+Connection request: [route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[DEBUG] 2017-05-23 17:06:22,058 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:288)
+Connection leased: [id: 52][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[DEBUG] 2017-05-23 17:06:22,059 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:235)
+Opening connection {}->http://localhost:4657
+[DEBUG] 2017-05-23 17:06:22,059 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139)
+Connecting to localhost/127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,059 method:org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146)
+Connection established 127.0.0.1:64517<->127.0.0.1:4657
+[DEBUG] 2017-05-23 17:06:22,059 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88)
+http-outgoing-52: set socket timeout to 10800000
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:256)
+Executing request GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/attribute/value HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:261)
+Target auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:267)
+Proxy auth state: UNCHALLENGED
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133)
+http-outgoing-52 >> GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/attribute/value HTTP/1.1
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-52 >> Cache-Control: no-cache
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-52 >> Host: localhost:4657
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-52 >> Connection: Keep-Alive
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-52 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+[DEBUG] 2017-05-23 17:06:22,060 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:136)
+http-outgoing-52 >> Accept-Encoding: gzip,deflate
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "GET /session/fe70c659329198dad18b96e61a9f502f/element/0.4487836547151227-6/attribute/value HTTP/1.1[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "Cache-Control: no-cache[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "Host: localhost:4657[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,061 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 >> "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,083 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,083 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 << "Content-Length:85[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,083 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,083 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 << "Connection:close[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,083 method:org.apache.http.impl.conn.Wire.wire(Wire.java:73)
+http-outgoing-52 << "[\r][\n]"
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.Wire.wire(Wire.java:87)
+http-outgoing-52 << "{"sessionId":"fe70c659329198dad18b96e61a9f502f","status":0,"value":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0xb0][0x8f][0xe4][0xb9][0xa6][0xe7][0xab][0xa5]"}"
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:122)
+http-outgoing-52 << HTTP/1.1 200 OK
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-52 << Content-Length:85
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-52 << Content-Type:application/json; charset=utf-8
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onResponseReceived(LoggingManagedHttpClientConnection.java:125)
+http-outgoing-52 << Connection:close
+[DEBUG] 2017-05-23 17:06:22,084 method:org.apache.http.impl.conn.LoggingManagedHttpClientConnection.close(LoggingManagedHttpClientConnection.java:79)
+http-outgoing-52: Close connection
+[DEBUG] 2017-05-23 17:06:22,085 method:org.apache.http.impl.execchain.ConnectionHolder.releaseConnection(ConnectionHolder.java:104)
+Connection discarded
+[DEBUG] 2017-05-23 17:06:22,085 method:org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:326)
+Connection released: [id: 52][route: {}->http://localhost:4657][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+查找点为=测试小书童123
+[INFO ] 2017-05-23 17:06:22,087 method:util.TestMonitor.onTestFailure(TestMonitor.java:34)
+Test run has failed
+[ERROR] 2017-05-23 17:06:22,087 method:util.TestMonitor.onTestFailure(TestMonitor.java:35)
+检查点不通过 expected [true] but found [false]
+[ERROR] 2017-05-23 17:06:22,088 method:util.TestMonitor.onTestFailure(TestMonitor.java:40)
+java.lang.AssertionError: 检查点不通过 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at test.MyinfoPageTest.testMyInfo(MyinfoPageTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-out>
+  </testcase>
+</testsuite>

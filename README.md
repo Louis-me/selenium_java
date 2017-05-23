@@ -15,19 +15,24 @@ selenium3+java 自动化测试
 
 ```
 .....
-            </plugin>
-            <!--添加插件 关联testNg.xml-->
-            <plugin>
+            <<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.2</version>
+                <version>2.20</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <file>res/testNG.xml</file>
+                        <suiteXmlFile>res/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <!--<workingDirectory>target/</workingDirectory>-->
                 </configuration>
+                <executions>
+                <execution>  <!--集成测试-->
+                    <id>failsafe-integration-tests</id>
+                    <phase>integration-test</phase>
+                    <goals>
+                        <goal>integration-test</goal>
+                    </goals>
+                </execution>
+            </executions>
             </plugin>
         </plugins>
     </build>
@@ -76,7 +81,7 @@ public class LoginPage {
     YamlRead yamlRead;
     OperateElement operateElement;
     protected WebDriver driver;
-
+    private boolean isOperate = true;
     /***
      * 默认构造函数
      * @param driver
@@ -93,7 +98,7 @@ public class LoginPage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public void operate() throws YamlException, FileNotFoundException {
+    public void operate() throws YamlException, FileNotFoundException, InterruptedException {
         List list = (List) yamlRead.getYmal().get("testcase");
 //        System.out.println(list);
         for(Object item: list){
@@ -102,7 +107,12 @@ public class LoginPage {
             testCase.setElement_info((String) ((Map)item).get("element_info"));
             testCase.setText((String) ((Map)item).get("text"));
             testCase.setOperate_type((String) ((Map)item).get("operate_type"));
-            operateElement.operate(testCase);
+            if (!operateElement.operate(testCase)) {
+                isOperate = false;
+                System.out.println("操作失败");
+                break;
+            }
+
         }
     }
 
@@ -112,19 +122,24 @@ public class LoginPage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public boolean checkpoint() throws YamlException, FileNotFoundException {
-        List list = (List) yamlRead.getYmal().get("check");
-//        System.out.println(list);
-        for(Object item: list){
-            CheckPoint checkPoint = new CheckPoint();
-            checkPoint.setElement_info((String) ((Map)item).get("element_info"));
-            checkPoint.setFind_type((String) ((Map)item).get("find_type"));
-            if (!operateElement.checkElement(checkPoint)) {
-                return false;
-            }
+    public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
+        if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
+            System.out.println("操作步骤失败了");
+            return false;
         }
+        List list = (List) yamlRead.getYmal().get("check");
+        for(Object item: list){
+                CheckPoint checkPoint = new CheckPoint();
+                checkPoint.setElement_info((String) ((Map)item).get("element_info"));
+                checkPoint.setFind_type((String) ((Map)item).get("find_type"));
+                if (!operateElement.checkElement(checkPoint)) {
+                    return false;
+                }
+            }
+
         return true;
     }
+	
 ```
 
 **配置登录的yaml**
@@ -172,20 +187,22 @@ public class LoginPageTest extends TestBaseSetup {
 
 **配置testng**
 
+
 ```
-<suite name="TesterHome">
+<suite name="TesterHome" parallel="tests" thread-count="2"> <!-- 并行地执行test套件-->
     <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
     <parameter name="browserType" value="chrome"/>
     <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
     <listeners>
-        <listener class-name="util.ExtentTestNGIReporterListener"/> <!--配置报告监听器-->
+        <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
+        <listener class-name="util.TestMonitor"/> <!-- 打印日志-->
     </listeners>
     <test name="登录">
         <classes>
             <class name="test.LoginPageTest"/>
         </classes>
     </test>
-    <test name="个人页面">
+    <test name="社区">
         <classes>
             <class name="test.MyinfoPageTest"/>
         </classes>
@@ -194,20 +211,20 @@ public class LoginPageTest extends TestBaseSetup {
 
 ```
 
+# 命令执行
+
+``` mvn test```
+
+![](img/result3.PNG)
+
 
 **测试结果**
 
-![](result2.PNG)
+![](img/result2.PNG)
 
 # 其他
 
 查看我的[更新日志](chanelog.md)
-
-## 后续版本
-
-* 日志管理
-* 多设备
-* docker gird
 
 
 

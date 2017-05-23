@@ -1,19 +1,11 @@
 package base;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
-
 public class TestBaseSetup {
     private WebDriver driver;
 //    static String driverPath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\";

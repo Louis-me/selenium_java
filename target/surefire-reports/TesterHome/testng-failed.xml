@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TesterHome]" parallel="tests">
+  <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+  <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="util.ExtentTestNGIReporterListener"/>
+    <listener class-name="util.TestMonitor"/>
+  </listeners>
+  <test name="社区(failed)" parallel="tests">
+    <classes>
+      <class name="test.MyinfoPageTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+          <include name="testMyInfo"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.MyinfoPageTest -->
+    </classes>
+  </test> <!-- 社区(failed) -->
+</suite> <!-- Failed suite [TesterHome] -->

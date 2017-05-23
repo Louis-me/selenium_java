@@ -2,13 +2,12 @@ package test;
 
 import base.TestBaseSetup;
 import com.esotericsoftware.yamlbeans.YamlException;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import pageobjects.CommunityPage;
 import pageobjects.LoginPage;
-import pageobjects.MyInfoPage;
 
 import java.io.FileNotFoundException;
 
@@ -21,10 +20,10 @@ public class CommunityPageTest extends TestBaseSetup {
     public void setUp() {
         driver=getDriver();
     }
-    @Test(testName = "精选帖子")
+    @Test
     public void testHighQuality() throws YamlException, FileNotFoundException, InterruptedException {
-//        LoginPage loginPage = new LoginPage(this.driver, "/Login.yaml");
-//        loginPage.operate();
+        LoginPage loginPage = new LoginPage(this.driver, "/Login.yaml");
+        loginPage.operate();
 
         CommunityPage communityPage = new CommunityPage(this.driver, "/Community.yaml");
         communityPage.operate();

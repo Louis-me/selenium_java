@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TesterHome">
+<suite name="TesterHome" parallel="tests" thread-count="2"> <!-- 并行地执行test套件-->
     <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
-    <parameter name="browserType" value="chrome"/>
+    <parameter name="browserType" value="chrome"/> <!-- 设置浏览器-->
     <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
     <listeners>
         <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
-        <listener class-name="util.TestMonitor"/> <!-- 打印日志-->
+        <listener class-name="util.TestMonitor"/><!-- 记录日志-->
     </listeners>
     <test name="登录">
         <classes>
@@ -17,10 +17,5 @@
             <class name="test.MyinfoPageTest"/>
         </classes>
     </test>
-    <!--<test name="精选帖子">-->
-        <!--<classes>-->
-            <!--<class name="test.CommunityPageTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
 </suite>
 

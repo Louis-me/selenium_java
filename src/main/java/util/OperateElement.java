@@ -2,9 +2,6 @@ package util;
 import model.CheckPoint;
 import model.TestCase;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -36,7 +33,7 @@ public class OperateElement {
         final By by = getElement(checkPoint.getFind_type(), checkPoint.getElement_info());
         boolean status = true;
             while(!isByPresent(driver, by)){
-                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+                driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             }
             if (checkPoint.getOperate_type() == null) { // Operate_type为空的话，默认就是find查找
                 return status;

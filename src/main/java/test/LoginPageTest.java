@@ -2,7 +2,7 @@ package test;
 
 import base.TestBaseSetup;
 import com.esotericsoftware.yamlbeans.YamlException;
-import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

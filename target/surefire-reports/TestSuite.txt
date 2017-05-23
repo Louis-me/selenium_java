@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.546 s <<< FAILURE! - in TestSuite
+testMyInfo(test.MyinfoPageTest)  Time elapsed: 6.775 s  <<< FAILURE!
+java.lang.AssertionError: 检查点不通过 expected [true] but found [false]
+	at test.MyinfoPageTest.testMyInfo(MyinfoPageTest.java:30)
+

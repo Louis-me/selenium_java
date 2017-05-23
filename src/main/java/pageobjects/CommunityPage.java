@@ -56,8 +56,11 @@ public class CommunityPage {
      * @throws FileNotFoundException
      */
     public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
+        if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
+            System.out.println("操作步骤失败了");
+            return false;
+        }
         List list = (List) yamlRead.getYmal().get("check");
-//        System.out.println(list);
         for(Object item: list){
             CheckPoint checkPoint = new CheckPoint();
             checkPoint.setElement_info((String) ((Map)item).get("element_info"));

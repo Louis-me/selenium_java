@@ -6,4 +6,4 @@ check:
     - element_info: user_name
       operate_type: getValue
       find_type: id
-      text: 测试小书童
+      text: 测试小书童123
