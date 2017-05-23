@@ -2,97 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281de749-23a7-45a8-9c3c-5cfcaea44ef2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/img/result3.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/bullet_point.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/collapseall.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/failed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/navigator-bullet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/passed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/skipped.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/test-classes/surefire-junit4-2.20.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/logs/debug.log.2017-05-22" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/2017-05-23T16-48-35_914-jvmRun1.dumpstream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/2017-05-23T16-53-16_878-jvmRun1.dumpstream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/2017-05-23T16-59-33_845-jvmRun1.dumpstream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TEST-TestSuite.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TestSuite.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TesterHome/testng-failed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TesterHome/登录.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TesterHome/登录.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TesterHome/社区.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/TesterHome/社区.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/emailable-report.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/junitreports/TEST-com.shark.selenium.LoginPageTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/junitreports/TEST-com.shark.selenium.MyinfoPageTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/junitreports/TEST-test.LoginPageTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/junitreports/TEST-test.MyinfoPageTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/classes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/groups.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/methods-alphabetical.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/methods-not-run.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/methods.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/reporter-output.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/testng.xml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/toc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/登录.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/TesterHome/社区.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/old/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/testng-failed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/testng-reports.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/testng-reports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/testng-results.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/surefire-reports/testng.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium_java/target/test-classes/testng.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../selenium_java/test-output/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/README.md" afterPath="$PROJECT_DIR$/../selenium_java/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/chanelog.md" afterPath="$PROJECT_DIR$/../selenium_java/chanelog.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/base/TestBaseSetup.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/base/TestBaseSetup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/model/CheckPoint.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/model/CheckPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/model/Report.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/model/Report.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/model/TestCase.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/model/TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/CommunityPage.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/CommunityPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/LoginPage.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/MyInfoPage.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/pageobjects/MyInfoPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test/CommunityPageTest.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test/CommunityPageTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test/LoginPageTest.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test/LoginPageTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test/MyinfoPageTest.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test/MyinfoPageTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/test2.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/test2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener$1.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/ExtentTestNGIReporterListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/OperateElement.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/OperateElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/PDFReportByGMail.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/PDFReportByGMail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/TestMonitor.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/TestMonitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/util/YamlRead.class" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/util/YamlRead.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__org_testng_testng_6_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../selenium_java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/logs/error.log" afterPath="$PROJECT_DIR$/../selenium_java/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/pom.xml" afterPath="$PROJECT_DIR$/../selenium_java/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/res/testng.xml" afterPath="$PROJECT_DIR$/../selenium_java/res/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/selenium_java.iml" afterPath="$PROJECT_DIR$/../selenium_java/selenium_java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/base/TestBaseSetup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/CommunityPage.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/CommunityPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/test/CommunityPageTest.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/CommunityPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/LoginPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/test/MyinfoPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" afterPath="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" afterPath="$PROJECT_DIR$/../selenium_java/src/main/resources/MyInfo.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/target/classes/MyInfo.yaml" afterPath="$PROJECT_DIR$/../selenium_java/target/classes/MyInfo.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../selenium_java/result.PNG" afterPath="$PROJECT_DIR$/../selenium_java/img/result.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../selenium_java/result2.PNG" afterPath="$PROJECT_DIR$/../selenium_java/img/result2.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" afterPath="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/../selenium_java/out/" />
     <ignored path="$PROJECT_DIR$/../selenium_java/target/" />
@@ -109,7 +20,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../selenium_java/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -117,6 +28,16 @@
               <folding>
                 <marker date="1495530815113" expanded="true" signature="637:989" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,16 +57,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Community.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Community.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,7 +97,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#488#489#0" expanded="false" />
+                <element signature="e#522#523#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -304,7 +219,6 @@
         <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Community.yaml" />
         <option value="$PROJECT_DIR$/../selenium_java/logs/error.log" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/MyInfoPage.java" />
-        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/test/CommunityPageTest.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/util/OperateElement.java" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/CommunityPage.java" />
@@ -318,6 +232,7 @@
         <option value="$PROJECT_DIR$/../selenium_java/res/testng.xml" />
         <option value="$PROJECT_DIR$/../selenium_java/src/main/java/pageobjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/../selenium_java/pom.xml" />
+        <option value="$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
       </list>
     </option>
   </component>
@@ -1281,7 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml" />
     <entry file="file://$PROJECT_DIR$/../selenium_java/res/testng.xml" />
     <entry file="file://$MAVEN_REPOSITORY$/org/testng/testng/6.11/testng-6.11.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -1394,7 +1308,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1461,6 +1379,14 @@
           <folding>
             <marker date="1495530815113" expanded="true" signature="637:989" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../selenium_java/src/main/resources/Login.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

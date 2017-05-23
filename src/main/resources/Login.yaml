@@ -6,7 +6,7 @@ testcase:
     - element_info: user[password]
       find_type: name
       operate_type: send_keys
-      text: shikun1988
+      text: ~~~
     - element_info: //*[@id="new_user"]/div[4]/input
       find_type: xpath
       operate_type: click
