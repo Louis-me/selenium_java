@@ -6,6 +6,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import util.ExtentTestNGIReporterListener;
+
 public class TestBaseSetup {
     private WebDriver driver;
 //    static String driverPath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\";
@@ -49,16 +51,17 @@ public class TestBaseSetup {
 
     @Parameters({ "browserType", "appURL" ,"driverPath"})
     @BeforeClass
-    public void initializeTestBaseSetup(String browserType, String appURL, String driverPath) {
+    public synchronized  void initializeTestBaseSetup(String browserType, String appURL, String driverPath) {
         try {
             setDriver(browserType, appURL, driverPath);
+            ExtentTestNGIReporterListener.driver = driver;
         } catch (Exception e) {
             System.out.println("Error....." + e.getStackTrace());
         }
     }
 
     @AfterClass
-    public void tearDown() {
+    public synchronized  void tearDown() {
         driver.quit();
     }
 }

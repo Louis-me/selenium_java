@@ -5,8 +5,8 @@ public class TestCase {
     private String find_type;// id,xpath,name,classname
     private String operate_type; // click,send_keys...
     private String text; //文本框内容,或者其他内容
-
-
+    private String frame; // frame的值
+    private String defaultContent; //切换到默认主页面
     public void setElement_info(String element_info) {
         this.element_info = element_info;
     }
@@ -38,5 +38,21 @@ public class TestCase {
 
     public String getText() {
         return text;
+    }
+
+    public String getFrame() {
+        return frame;
+    }
+
+    public void setFrame(String frame) {
+        this.frame = frame;
+    }
+
+    public String getDefaultContent() {
+        return defaultContent;
+    }
+
+    public void setDefaultContent(String defaultContent) {
+        this.defaultContent = defaultContent;
     }
 }

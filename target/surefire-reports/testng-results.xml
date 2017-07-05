@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TesterHome" duration-ms="17785" started-at="2017-05-23T09:06:05Z" finished-at="2017-05-23T09:06:22Z">
+  <suite name="wiseoper" duration-ms="34012" started-at="2017-07-05T09:07:09Z" finished-at="2017-07-05T09:07:43Z">
     <groups>
     </groups>
-    <test name="登录" duration-ms="17267" started-at="2017-05-23T09:06:05Z" finished-at="2017-05-23T09:06:22Z">
-      <class name="test.LoginPageTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTest@48eff760]" name="initializeTestBaseSetup" is-config="true" duration-ms="9901" started-at="2017-05-23T17:06:05Z" finished-at="2017-05-23T17:06:15Z">
+    <test name="账号延期" duration-ms="34012" started-at="2017-07-05T09:07:09Z" finished-at="2017-07-05T09:07:43Z">
+      <class name="test.ApplyContinueTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="initializeTestBaseSetup" is-config="true" duration-ms="5071" started-at="2017-07-05T17:07:09Z" finished-at="2017-07-05T17:07:14Z">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://testerhome.com/account/sign_in]]>
+                <![CDATA[https://lfwiseopertest02.hwcloudtest.cn:8443/#/login]]>
               </value>
             </param>
             <param index="2">
@@ -28,58 +28,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.LoginPageTest@48eff760]" name="setUp" is-config="true" duration-ms="0" started-at="2017-05-23T17:06:15Z" finished-at="2017-05-23T17:06:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-05T17:07:14Z" finished-at="2017-07-05T17:07:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:test.LoginPageTest@48eff760]" name="testLogin" duration-ms="4921" started-at="2017-05-23T17:06:15Z" finished-at="2017-05-23T17:06:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginPageTest@48eff760]" name="tearDown" is-config="true" duration-ms="2387" started-at="2017-05-23T17:06:20Z" finished-at="2017-05-23T17:06:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.LoginPageTest -->
-    </test> <!-- 登录 -->
-    <test name="社区" duration-ms="17785" started-at="2017-05-23T09:06:05Z" finished-at="2017-05-23T09:06:22Z">
-      <class name="test.MyinfoPageTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.MyinfoPageTest@9629756]" name="initializeTestBaseSetup" is-config="true" duration-ms="10045" started-at="2017-05-23T17:06:05Z" finished-at="2017-05-23T17:06:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://testerhome.com/account/sign_in]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[C:\Program Files (x86)\Google\Chrome\Application\]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.MyinfoPageTest@9629756]" name="setUp" is-config="true" duration-ms="0" started-at="2017-05-23T17:06:15Z" finished-at="2017-05-23T17:06:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testMyInfo()[pri:0, instance:test.MyinfoPageTest@9629756]" name="testMyInfo" duration-ms="6826" started-at="2017-05-23T17:06:15Z" finished-at="2017-05-23T17:06:22Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="testApplyContinue()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="testApplyContinue" duration-ms="27961" started-at="2017-07-05T17:07:14Z" finished-at="2017-07-05T17:07:42Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[检查点不通过 expected [true] but found [false]]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3] (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 检查点不通过 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at test.MyinfoPageTest.testMyInfo(MyinfoPageTest.java:30)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at util.OperateElement.waitForElement(OperateElement.java:99)
+	at util.OperateElement.checkElement(OperateElement.java:43)
+	at pageobjects.ApplyContinuePage.checkpoint(ApplyContinuePage.java:103)
+	at test.ApplyContinueTest.testApplyContinue(ApplyContinueTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,17 +65,30 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: '4CV65290DX', ip: '192.168.1.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 24 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMyInfo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.MyinfoPageTest@9629756]" name="tearDown" is-config="true" duration-ms="860" started-at="2017-05-23T17:06:22Z" finished-at="2017-05-23T17:06:22Z">
+        </test-method> <!-- testApplyContinue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="tearDown" is-config="true" duration-ms="896" started-at="2017-07-05T17:07:42Z" finished-at="2017-07-05T17:07:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.MyinfoPageTest -->
-    </test> <!-- 社区 -->
-  </suite> <!-- TesterHome -->
+      </class> <!-- test.ApplyContinueTest -->
+    </test> <!-- 账号延期 -->
+  </suite> <!-- wiseoper -->
 </testng-results>

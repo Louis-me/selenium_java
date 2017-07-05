@@ -8,7 +8,6 @@ public class CheckPoint {
     private String operate_type; //检查点方法，现在支持getValue,默认是查找,可自由拓展
     private  String find_type;//暂时无用
     private String text; //文本框内容
-
     public String getElement_info() {
         return element_info;
     }
@@ -40,6 +39,5 @@ public class CheckPoint {
     public String getText() {
         return text;
     }
-
 
 }

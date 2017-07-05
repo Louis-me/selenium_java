@@ -1,20 +1,15 @@
 testcase:
-    - element_info: user_login
-      find_type: id
-      operate_type: send_keys
-      text: lose
-    - element_info: user[password]
+    - element_info: account
       find_type: name
       operate_type: send_keys
-      text: ~~~
-    - element_info: //*[@id="new_user"]/div[4]/input
-      find_type: xpath
-      operate_type: click
-    - element_info: //a//img[contains(@class,"avatar-32")]
+      text: swx458348
+    - element_info: wiseopernice
+      find_type: name
+      operate_type: send_keys
+      text: ~shikun1989
+    - element_info: //*[@id="login"]/div[1]/div[2]/form/button[1]
       find_type: xpath
       operate_type: click
 check:
-    - element_info: //a[contains(text(),"lose")]
-      find_type: xpath
-#    - element_info: /html/body/div[1]/nav/div/ul[2]/li[2]/a
-#      find_type: xpath
+      - element_info: //*[@id="dropdownMenuRole"]/span[2]/div[contains(text(),"shikun")]
+        find_type: xpath

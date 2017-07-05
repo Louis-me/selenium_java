@@ -18,7 +18,6 @@ public class YamlRead {
         String path = getClass().getResource(this.path).getPath();
         com.esotericsoftware.yamlbeans.YamlReader reader = new com.esotericsoftware.yamlbeans.YamlReader(new FileReader(path));
         Object object = reader.read();
-        System.out.println(object);
         return (Map)object;
     }
 }

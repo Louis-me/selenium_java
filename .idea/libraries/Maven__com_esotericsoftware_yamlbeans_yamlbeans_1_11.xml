@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.esotericsoftware.yamlbeans:yamlbeans:1.11">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11.jar!/" />
+      <root url="jar://D:/maven/repository/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11-javadoc.jar!/" />
+      <root url="jar://D:/maven/repository/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11-sources.jar!/" />
+      <root url="jar://D:/maven/repository/com/esotericsoftware/yamlbeans/yamlbeans/1.11/yamlbeans-1.11-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

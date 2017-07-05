@@ -35,7 +35,7 @@
                     </suiteXmlFiles>
                 </configuration>
                 <executions>
-                <execution>  <!--集成测试-->
+                <execution>  <!---->
                     <id>failsafe-integration-tests</id>
                     <phase>integration-test</phase>
                     <goals>

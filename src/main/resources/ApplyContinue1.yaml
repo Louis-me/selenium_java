@@ -1,0 +1,31 @@
+prefix:
+    - element_info: //*[@id="setting"]/a
+      find_type: xpath
+      operate_type: click
+    - element_info: //*[@id="J_left_div"]/div[1]/ul/li[14]/li/div/p
+      find_type: xpath
+      operate_type: click
+    - element_info: //*[@id="personInformation"]/div[2]/div[1]/p[5]/a
+      find_type: xpath
+      operate_type: click
+      frame: lfwiseopertest02.hwcloudtest.cn
+testcase:
+    - element_info: applyReson
+      find_type: name
+      operate_type: send_keys
+      text: 333333
+    - element_info: (//*[@id="users"])[1]
+      find_type: xpath
+      operate_type: send_keys
+      text: sunwei WX444350;
+      defaultContent: 1
+    - element_info: (//*[@id="users"])[2]
+      find_type: xpath
+      operate_type: send_keys
+      text: sunwei WX444350;
+    - element_info: //*[@id="wiseoper-content"]/div[3]/form/div/div[3]/button[1]
+      find_type: xpath
+      operate_type: click
+check:
+    - element_info: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3]
+      find_type: xpath

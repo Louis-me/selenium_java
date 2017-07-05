@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TesterHome" parallel="tests" thread-count="2"> <!-- 并行地执行test套件-->
-    <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
+<suite name="wiseoper" parallel="tests" thread-count="1"> <!-- 并行地执行test套件-->
+    <parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/#/login"/>
     <parameter name="browserType" value="chrome"/> <!-- 设置浏览器-->
     <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
     <listeners>
@@ -9,12 +9,12 @@
     </listeners>
     <test name="登录">
         <classes>
-            <class name="test.LoginPageTest"/>
+            <class name="test.LoginTest"/>
         </classes>
     </test>
-    <test name="社区">
+    <test name="账号延期">
         <classes>
-            <class name="test.MyinfoPageTest"/>
+            <class name="test.ApplyContinueTest"/>
         </classes>
     </test>
 </suite>
