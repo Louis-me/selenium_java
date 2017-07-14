@@ -1,0 +1,24 @@
+# 输入命令：docker-compose up 下载并启动镜像
+
+hub:
+  image: selenium/hub
+  ports:
+    - "4444:4444"
+firefox:
+  image: selenium/node-firefox
+  ports:
+    - 5901:5900
+  links:
+    - hub
+chrome:
+  image: selenium/node-chrome
+  ports:
+    - 5902:5900
+  links:
+    - hub
+node-chrome-debug:
+  image: selenium/node-chrome-debug
+  ports:
+    - 5900:5900
+  links:
+    - hub

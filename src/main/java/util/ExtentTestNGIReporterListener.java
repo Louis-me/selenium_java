@@ -23,8 +23,8 @@ public class ExtentTestNGIReporterListener implements  ITestListener {
 
     private static ExtentReports extent = ExtentManager.getInstance("test-output/extent.html");
     private static ThreadLocal test = new ThreadLocal();
-    public static WebDriver driver;
-
+//    public static WebDriver driver;
+    public static String fileName;
     @Override
     public synchronized void onStart(ITestContext context) {
     }
@@ -54,12 +54,17 @@ public class ExtentTestNGIReporterListener implements  ITestListener {
             if (!file.exists()){
                 file.mkdirs();
             }
-            String fileName = screenPath + result.getMethod().getMethodName() + ".png";
-            File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File(fileName));
+            System.out.println("------------onTestFailure--------");
+
+//            fileName = screenPath + result.getMethod().getMethodName() + UUID.randomUUID().toString() + ".png";
+//            driver.switchTo().defaultContent();
+//            File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//            FileUtils.copyFile(srcFile, new File(fileName));
             ((ExtentTest)test.get()).addScreenCaptureFromPath(fileName);
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("------------Exception--------");
+            System.out.println(e.getMessage());
         }
 
     }

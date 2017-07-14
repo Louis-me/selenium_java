@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="wiseoper" duration-ms="34012" started-at="2017-07-05T09:07:09Z" finished-at="2017-07-05T09:07:43Z">
+  <suite name="wiseoper" duration-ms="46398" started-at="2017-07-05T09:47:29Z" finished-at="2017-07-05T09:48:16Z">
     <groups>
     </groups>
-    <test name="账号延期" duration-ms="34012" started-at="2017-07-05T09:07:09Z" finished-at="2017-07-05T09:07:43Z">
-      <class name="test.ApplyContinueTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="initializeTestBaseSetup" is-config="true" duration-ms="5071" started-at="2017-07-05T17:07:09Z" finished-at="2017-07-05T17:07:14Z">
+    <test name="登录" duration-ms="13051" started-at="2017-07-05T09:47:29Z" finished-at="2017-07-05T09:47:43Z">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@1d8d30f7]" name="initializeTestBaseSetup" is-config="true" duration-ms="4269" started-at="2017-07-05T17:47:30Z" finished-at="2017-07-05T17:47:34Z">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-05T17:07:14Z" finished-at="2017-07-05T17:07:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.LoginTest@1d8d30f7]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-05T17:47:34Z" finished-at="2017-07-05T17:47:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testApplyContinue()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="testApplyContinue" duration-ms="27961" started-at="2017-07-05T17:07:14Z" finished-at="2017-07-05T17:07:42Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:test.LoginTest@1d8d30f7]" name="testLogin" duration-ms="7915" started-at="2017-07-05T17:47:34Z" finished-at="2017-07-05T17:47:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginTest@1d8d30f7]" name="tearDown" is-config="true" duration-ms="817" started-at="2017-07-05T17:47:42Z" finished-at="2017-07-05T17:47:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- 登录 -->
+    <test name="账号延期" duration-ms="33118" started-at="2017-07-05T09:47:43Z" finished-at="2017-07-05T09:48:16Z">
+      <class name="test.ApplyContinueTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ApplyContinueTest@5f3a4b84]" name="initializeTestBaseSetup" is-config="true" duration-ms="3939" started-at="2017-07-05T17:47:43Z" finished-at="2017-07-05T17:47:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://lfwiseopertest02.hwcloudtest.cn:8443/#/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:\Program Files (x86)\Google\Chrome\Application\]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ApplyContinueTest@5f3a4b84]" name="setUp" is-config="true" duration-ms="1" started-at="2017-07-05T17:47:47Z" finished-at="2017-07-05T17:47:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testApplyContinue()[pri:0, instance:test.ApplyContinueTest@5f3a4b84]" name="testApplyContinue" duration-ms="28139" started-at="2017-07-05T17:47:47Z" finished-at="2017-07-05T17:48:15Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3] (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
@@ -84,7 +121,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplyContinue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ApplyContinueTest@6d8a00e3]" name="tearDown" is-config="true" duration-ms="896" started-at="2017-07-05T17:07:42Z" finished-at="2017-07-05T17:07:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ApplyContinueTest@5f3a4b84]" name="tearDown" is-config="true" duration-ms="886" started-at="2017-07-05T17:48:15Z" finished-at="2017-07-05T17:48:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -99,7 +99,7 @@ public class OperateElement {
             wait.until(ExpectedConditions.presenceOfElementLocated(elementLocator));
             return true;
         }
-        catch (NoSuchElementException | ElementNotVisibleException e) {
+        catch (NoSuchElementException | ElementNotVisibleException | org.openqa.selenium.TimeoutException e) {
             return false;
         }
     }

@@ -1,18 +1,36 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="wiseoper" parallel="tests" thread-count="1"> <!-- 并行地执行test套件-->
-    <parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/#/login"/>
-    <parameter name="browserType" value="chrome"/> <!-- 设置浏览器-->
-    <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+<suite name="wiseoper" parallel="tests" thread-count="3"> <!-- 并行地执行test套件-->
     <listeners>
         <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
         <listener class-name="util.TestMonitor"/><!-- 记录日志-->
     </listeners>
-    <test name="登录">
+    <test name="chrome59登录">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="browserVersion" value="59.0.3071.115" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+        <parameter name="appURL" value="https://XXX/#/login"/>
         <classes>
             <class name="test.LoginTest"/>
         </classes>
     </test>
-    <test name="账号延期">
+    <test name="ff54">
+        <parameter name="browserType" value="firefox" />
+        <parameter name="browserVersion" value="54.0" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="1" />
+        <parameter name="appURL" value="https:/XXXX8443/#/login"/>
+        <classes>
+            <class name="test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="chrome59申请">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="browserVersion" value="59.0.3071.115" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+        <parameter name="appURL" value="https:/XXX/#/login"/>
         <classes>
             <class name="test.ApplyContinueTest"/>
         </classes>

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.96 s <<< FAILURE! - in TestSuite
-testApplyContinue(test.ApplyContinueTest)  Time elapsed: 27.985 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.993 s <<< FAILURE! - in TestSuite
+testApplyContinue(test.ApplyContinueTest)  Time elapsed: 28.575 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="wiseoper-content"]/div[3]/div/div[1]/span[3] (tried for 10 second(s) with 500 MILLISECONDS interval)
 	at test.ApplyContinueTest.testApplyContinue(ApplyContinueTest.java:32)
 Caused by: org.openqa.selenium.NoSuchElementException: 

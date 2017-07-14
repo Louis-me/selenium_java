@@ -68,18 +68,20 @@
             <artifactId>yamlbeans</artifactId>
             <version>1.11</version>
         </dependency>
-        <!--pdf-->
+
+
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>3.0.5</version>
         </dependency>
-        <!--email-->
+        <!--
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.5.0-b01</version>
         </dependency>
+        -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>

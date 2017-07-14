@@ -7,7 +7,6 @@ test\CommunityPageTest.class
 pageobjects\CommunityPage.class
 test\MyinfoPageTest.class
 util\ExtentTestNGIReporterListener.class
-util\ExtentTestNGIReporterListener$1.class
 util\PDFReportByGMail.class
 base\TestBaseSetup.class
 model\Report.class

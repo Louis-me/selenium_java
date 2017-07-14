@@ -7,7 +7,7 @@ selenium3+java 自动化测试
 * testng 配置测试类
 * yaml维护用例
 * PageObject 模式
-
+* docker 多浏览器支持
 
 # 用法
 
@@ -189,22 +189,40 @@ public class LoginPageTest extends TestBaseSetup {
 
 
 ```
-<suite name="TesterHome" parallel="tests" thread-count="2"> <!-- 并行地执行test套件-->
-    <parameter name="appURL" value="https://testerhome.com/account/sign_in"/>
-    <parameter name="browserType" value="chrome"/>
-    <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+<suite name="XXX" parallel="tests" thread-count="3"> <!-- 并行地执行test套件-->
     <listeners>
         <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
-        <listener class-name="util.TestMonitor"/> <!-- 打印日志-->
+        <listener class-name="util.TestMonitor"/><!-- 记录日志-->
     </listeners>
-    <test name="登录">
+    <test name="chrome59登录">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="browserVersion" value="59.0.3071.115" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+        <parameter name="appURL" value="https://XXX/#/login"/>
         <classes>
-            <class name="test.LoginPageTest"/>
+            <class name="test.LoginTest"/>
         </classes>
     </test>
-    <test name="社区">
+    <test name="ff54">
+        <parameter name="browserType" value="firefox" />
+        <parameter name="browserVersion" value="54.0" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="1" />
+        <parameter name="appURL" value="https:/XXXX8443/#/login"/>
         <classes>
-            <class name="test.MyinfoPageTest"/>
+            <class name="test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="chrome59申请">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="browserVersion" value="59.0.3071.115" />
+        <parameter name="remoteIP" value="192.168.99.100" />
+        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
+        <parameter name="appURL" value="https:/XXX/#/login"/>
+        <classes>
+            <class name="test.ApplyContinueTest"/>
         </classes>
     </test>
 </suite>

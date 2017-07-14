@@ -3,14 +3,22 @@ package pageobjects;
 import com.esotericsoftware.yamlbeans.YamlException;
 import model.CheckPoint;
 import model.TestCase;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import util.ExtentTestNGIReporterListener;
 import util.OperateElement;
 import util.YamlRead;
 import util.WebBrower;
+
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.UUID;
 
 /**
  * Created by shikun on 2017/7/3.
@@ -92,7 +100,8 @@ public class ApplyContinuePage {
      */
     public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
         if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
-            System.out.println("操作步骤失败了");
+            System.out.println("操作失败");
+            TakesScreenshot();
             return false;
         }
         List list = (List) yamlRead.getYmal().get("check");
@@ -101,9 +110,32 @@ public class ApplyContinuePage {
             checkPoint.setElement_info((String) ((Map) item).get("element_info"));
             checkPoint.setFind_type((String) ((Map) item).get("find_type"));
             if (!operateElement.checkElement(checkPoint)) {
+                TakesScreenshot();
                 return false;
             }
         }
         return true;
     }
-}
+
+    public void TakesScreenshot() {
+        File directory = new File("test-output");
+        try {
+            String screenPath = directory.getCanonicalPath() + "\\";
+            File file = new File(screenPath);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+            System.out.println("------------检查点失败--------");
+//            this.driver.switchTo().defaultContent();
+            String fileName = screenPath + UUID.randomUUID().toString() + ".png";
+            driver.switchTo().defaultContent();
+            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(srcFile, new File(fileName));
+
+            ExtentTestNGIReporterListener.fileName = fileName;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    }
