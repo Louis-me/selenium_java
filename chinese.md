@@ -14,7 +14,7 @@ selenium3+java+windows7_64
 
 - ≈‰÷√ [pom.xml](pom.xml)
 - ≈‰÷√ [testng](res/testng.xml)
-- ≈‰÷√ [log4j][res/log4j.properties]
+- ≈‰÷√ [log4j](res/log4j.properties)
 - ÷¥–– ```docker-compose up```
 
 #  µ¿˝
