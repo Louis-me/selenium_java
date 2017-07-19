@@ -1,29 +1,31 @@
-# selenium3 java
-* window7_X64 
-* maven 
-* testng 
-* write testCase use yaml
-* PageObject 
-* docker 
+# 说明
 
-# config
+selenium3+java+windows7_64
 
-- config [pom.xml](pom.xml)
-- config [testng](res/testng.xml)
-- config [log4j][res/log4j.properties]
-- exec ```docker-compose up```
+# 功能
+* maven 管理
+* testng 配置测试类
+* yaml维护用例
+* PageObject 模式
+* docker 多浏览器支持
 
-# Example
 
-- login testcase 
+# 配置
 
-**PageObject**
+- 配置 [pom.xml](pom.xml)
+- 配置 [testng](res/testng.xml)
+- 配置 [log4j][res/log4j.properties]
+- 执行 ```docker-compose up```
 
-All page are made up of three parts:
+# 实例
 
-* constructor
-* operation method
-* checkPoint
+**配置PageObject**
+
+以登录为例子,所有的page都由三部分构成：
+
+* 构造函数
+* 操作方法
+* 检查点
 
 ```
 public class LoginPage {
@@ -32,9 +34,9 @@ public class LoginPage {
     protected WebDriver driver;
     private boolean isOperate = true;
     /***
-     * 
+     * 默认构造函数
      * @param driver
-     * @param path yaml
+     * @param path yaml配置参数
      */
     public LoginPage(WebDriver driver, String path) {
         this.driver = driver;
@@ -43,7 +45,7 @@ public class LoginPage {
     }
 
     /***
-     * operate setp
+     * 测试步骤
      * @throws YamlException
      * @throws FileNotFoundException
      */
@@ -58,7 +60,7 @@ public class LoginPage {
             testCase.setOperate_type((String) ((Map)item).get("operate_type"));
             if (!operateElement.operate(testCase)) {
                 isOperate = false;
-                System.out.println("operate failed");
+                System.out.println("操作失败");
                 break;
             }
 
@@ -66,14 +68,14 @@ public class LoginPage {
     }
 
     /***
-     * checkPoint
+     * 检查点
      * @return
      * @throws YamlException
      * @throws FileNotFoundException
      */
     public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
-        if (!isOperate) { // If the operation step fails, the checkpoint fails
-            System.out.println("operate failed");
+        if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
+            System.out.println("操作步骤失败了");
             return false;
         }
         List list = (List) yamlRead.getYmal().get("check");
@@ -91,7 +93,7 @@ public class LoginPage {
 	
 ```
 
-**login yaml**
+**配置登录的yaml**
 
 ```
 testcase:
@@ -115,7 +117,7 @@ check:
 ```
 
 
-**login test**
+**登录测试**
 
 ```
 public class LoginTest  {
@@ -143,23 +145,22 @@ public class LoginTest  {
         this.driver.quit();
     }
 }
-```
 
 
-# execute
+# 命令执行
 
 ``` mvn test```
 
 ![](img/result3.PNG)
 
 
-**report**
+**测试结果**
 
 ![](img/result2.PNG)
 
+# 其他
 
-# other
-* [Chinese](Chinese.md)
+查看我的[更新日志](chanelog.md)
 
 
 
