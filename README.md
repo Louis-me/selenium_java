@@ -10,7 +10,7 @@
 
 - config [pom.xml](pom.xml)
 - config [testng](res/testng.xml)
-- config [log4j][res/log4j.properties]
+- config [log4j](res/log4j.properties)
 - exec ```docker-compose up```
 
 # Example
@@ -159,7 +159,7 @@ public class LoginTest  {
 
 
 # other
-* [Chinese](Chinese.md)
+* [Chinese](chinese.md)
 
 
 
