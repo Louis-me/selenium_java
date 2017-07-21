@@ -103,6 +103,16 @@ public class OperateElement {
             return false;
         }
     }
+
+    /***
+     *  清空文本框
+     * webElement
+
+     */
+    public void clear(WebElement webElement) {
+        webElement.clear();
+    }
+
     /***
      *  执行步骤
      * TestCase 实体类
@@ -131,6 +141,7 @@ public class OperateElement {
                     break;
                 }
                 case "send_keys": {  //输入内容
+                    clear(webElement); // 清空文本框
                     webElement.sendKeys(testCase.getText());
                     System.out.println(testCase.getElement_info() + ":输入内容==" + testCase.getText());
                     break;

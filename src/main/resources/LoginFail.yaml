@@ -1,0 +1,15 @@
+testcase:
+    - element_info: account
+      find_type: name
+      operate_type: send_keys
+      text: swx4583481
+    - element_info: wiseopernice
+      find_type: name
+      operate_type: send_keys
+      text: ~shikun1989
+    - element_info: //*[@id="login"]/div[1]/div[2]/form/button[1]
+      find_type: xpath
+      operate_type: click
+check:
+      - element_info: //*[@id="login1"]/div[1]/div[2]/form/div[4]/p[1]
+        find_type: xpath

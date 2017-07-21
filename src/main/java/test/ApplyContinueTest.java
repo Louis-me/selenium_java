@@ -20,13 +20,14 @@ import java.io.FileNotFoundException;
 public class ApplyContinueTest  {
     private WebDriver driver;
     private TestBaseSetup testBaseSetup = new TestBaseSetup();
+    private String browserType;
 
 
     @Parameters({ "browserType", "appURL" ,"driverPath","browserVersion", "remoteIP"})
     @BeforeClass
     public  void setUp(String browserType, String appURL, String driverPath, String browserVersion, String remoteIP) {
         driver = testBaseSetup.setDriver(browserType, appURL, driverPath,browserVersion, remoteIP);
-
+        this.browserType = browserType;
     }
 
 
@@ -37,13 +38,11 @@ public class ApplyContinueTest  {
 
         ApplyContinuePage applyContinuePage = new ApplyContinuePage(this.driver, "/ApplyContinue1.yaml");
         applyContinuePage.operate();
-        Assert.assertTrue(applyContinuePage.checkpoint(), "检查点不通过");
+        Assert.assertTrue(applyContinuePage.checkpoint(this.browserType), "检查点不通过");
 
     }
     @AfterClass
     public void tearDown() {
-//        this.driver.switchTo().defaultContent();
-//        ExtentTestNGIReporterListener.driver = this.driver;
         this.driver.quit();
     }
 }

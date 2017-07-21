@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import util.ExtentTestNGIReporterListener;
 import util.OperateElement;
 import util.YamlRead;
@@ -64,10 +65,10 @@ public class LoginPage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
+    public boolean checkpoint(String browserType) throws YamlException, FileNotFoundException, InterruptedException {
         if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
             System.out.println("前置条件失败");
-            TakesScreenshot();
+            TakesScreenshot(browserType);
             return false;
         }
         List list = (List) yamlRead.getYmal().get("check");
@@ -76,7 +77,7 @@ public class LoginPage {
                 checkPoint.setElement_info((String) ((Map)item).get("element_info"));
                 checkPoint.setFind_type((String) ((Map)item).get("find_type"));
                 if (!operateElement.checkElement(checkPoint)) {
-                    TakesScreenshot();
+                    TakesScreenshot(browserType);
                     return false;
                 }
             }
@@ -84,7 +85,7 @@ public class LoginPage {
         return true;
     }
 
-    public void TakesScreenshot() {
+    public void TakesScreenshot(String browserType) {
         File directory = new File("test-output");
         try {
             String screenPath = directory.getCanonicalPath() + "\\";
@@ -94,7 +95,7 @@ public class LoginPage {
             }
             System.out.println("------------检查点失败--------");
 //            this.driver.switchTo().defaultContent();
-            String fileName = screenPath + UUID.randomUUID().toString() + ".png";
+            String fileName = screenPath + browserType + "_" + UUID.randomUUID().toString() + ".png";
             driver.switchTo().defaultContent();
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(srcFile, new File(fileName));

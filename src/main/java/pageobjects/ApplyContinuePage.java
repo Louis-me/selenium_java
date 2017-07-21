@@ -47,19 +47,26 @@ public class ApplyContinuePage {
     private void prefix() throws YamlException, FileNotFoundException, InterruptedException {
         List list = (List) yamlRead.getYmal().get("prefix");
         System.out.println(list);
-        for (Object item : list) {
-            TestCase testCase = new TestCase();
-            testCase.setFind_type((String) ((Map) item).get("find_type"));
-            testCase.setElement_info((String) ((Map) item).get("element_info"));
-            testCase.setText((String) ((Map) item).get("text"));
-            testCase.setOperate_type((String) ((Map) item).get("operate_type"));
-            testCase.setFrame((String) ((Map) item).get("frame")); //切到iframe
-            if (!operateElement.operate(testCase)) {
-                isOperate = false;
-                System.out.println("前置条件失败");
-                break;
+        try {
+            for (Object item : list) {
+                TestCase testCase = new TestCase();
+                testCase.setFind_type((String) ((Map) item).get("find_type"));
+                testCase.setElement_info((String) ((Map) item).get("element_info"));
+                testCase.setText((String) ((Map) item).get("text"));
+                testCase.setOperate_type((String) ((Map) item).get("operate_type"));
+                testCase.setFrame((String) ((Map) item).get("frame")); //切到iframe
+                if (!operateElement.operate(testCase)) {
+                    isOperate = false;
+                    System.out.println("前置条件失败");
+                    break;
+                }
             }
         }
+        catch (org.openqa.selenium.NoSuchFrameException e) {
+            System.out.println("切换frame失败");
+            isOperate = false;
+        }
+
     }
 
     /***
@@ -98,10 +105,10 @@ public class ApplyContinuePage {
      * @throws YamlException
      * @throws FileNotFoundException
      */
-    public boolean checkpoint() throws YamlException, FileNotFoundException, InterruptedException {
+    public boolean checkpoint(String browserType) throws YamlException, FileNotFoundException, InterruptedException {
         if (!isOperate) { // 如果操作步骤失败，检查点也就判断失败
             System.out.println("操作失败");
-            TakesScreenshot();
+            TakesScreenshot(browserType);
             return false;
         }
         List list = (List) yamlRead.getYmal().get("check");
@@ -110,14 +117,14 @@ public class ApplyContinuePage {
             checkPoint.setElement_info((String) ((Map) item).get("element_info"));
             checkPoint.setFind_type((String) ((Map) item).get("find_type"));
             if (!operateElement.checkElement(checkPoint)) {
-                TakesScreenshot();
+                TakesScreenshot(browserType);
                 return false;
             }
         }
         return true;
     }
 
-    public void TakesScreenshot() {
+    public void TakesScreenshot(String browserType) {
         File directory = new File("test-output");
         try {
             String screenPath = directory.getCanonicalPath() + "\\";
@@ -126,8 +133,7 @@ public class ApplyContinuePage {
                 file.mkdirs();
             }
             System.out.println("------------检查点失败--------");
-//            this.driver.switchTo().defaultContent();
-            String fileName = screenPath + UUID.randomUUID().toString() + ".png";
+            String fileName = screenPath + browserType + "_" + UUID.randomUUID().toString() + ".png";
             driver.switchTo().defaultContent();
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(srcFile, new File(fileName));
