@@ -17,10 +17,10 @@ import java.io.FileNotFoundException;
 public class CommunityPageTest  {
     private WebDriver driver;
     private TestBaseSetup testBaseSetup = new TestBaseSetup();
-    @Parameters({ "browserType", "appURL" ,"driverPath","version", "remoteip"})
+    @Parameters({ "browserType", "appURL" ,"version", "remoteip"})
     @org.testng.annotations.BeforeClass
     public void setUp(String browserType, String appURL, String driverPath, String version, String remoteip) {
-        driver = testBaseSetup.setDriver(browserType, appURL, driverPath,version, remoteip);
+        driver = testBaseSetup.setDriver(browserType, appURL,version, remoteip);
     }
     @Test
     public void testHighQuality() throws YamlException, FileNotFoundException, InterruptedException {

@@ -20,7 +20,7 @@ public class MyinfoPageTest {
     @Parameters({ "browserType", "appURL" ,"driverPath","version", "remoteip"})
     @org.testng.annotations.BeforeClass
     public void setUp(String browserType, String appURL, String driverPath, String version, String remoteip) {
-        driver = testBaseSetup.setDriver(browserType, appURL, driverPath,version, remoteip);
+        driver = testBaseSetup.setDriver(browserType, appURL,version, remoteip);
     }
     @Test
     public void testMyInfo() throws YamlException, FileNotFoundException, InterruptedException {

@@ -4,36 +4,41 @@
         <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
         <listener class-name="util.TestMonitor"/><!-- 记录日志-->
     </listeners>
-    <test name="chrome59登录">
-        <parameter name="browserType" value="chrome" />
-        <parameter name="browserVersion" value="59.0.3071.115" />
-        <parameter name="remoteIP" value="192.168.99.100" />
-        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
-        <parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/"/>
-        <classes>
-            <class name="test.LoginTest"/>
-        </classes>
-    </test>
-    <test name="ff54">
+    <!--<test name="chrome59登录">-->
+        <!--<parameter name="browserType" value="chrome" />-->
+        <!--<parameter name="browserVersion" value="59.0.3071.115" />-->
+        <!--<parameter name="remoteIP" value="192.168.99.100" />-->
+        <!--<parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/"/>-->
+        <!--<classes>-->
+            <!--<class name="test.LoginTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="ff51">
         <parameter name="browserType" value="firefox" />
-        <parameter name="browserVersion" value="54.0" />
+        <parameter name="browserVersion" value="51.0" />
         <parameter name="remoteIP" value="192.168.99.100" />
-        <parameter name="driverPath" value="1" />
         <parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/"/>
         <classes>
             <class name="test.LoginTest"/>
         </classes>
     </test>
-
-    <test name="chrome59申请">
-        <parameter name="browserType" value="chrome" />
-        <parameter name="browserVersion" value="59.0.3071.115" />
+    <test name="ff52">
+        <parameter name="browserType" value="firefox" />
+        <parameter name="browserVersion" value="52.0" />
         <parameter name="remoteIP" value="192.168.99.100" />
-        <parameter name="driverPath" value="C:\Program Files (x86)\Google\Chrome\Application\"/>
         <parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/"/>
         <classes>
-            <class name="test.ApplyContinueTest"/>
+            <class name="test.LoginTest"/>
         </classes>
     </test>
+    <!--<test name="chrome59申请">-->
+        <!--<parameter name="browserType" value="chrome" />-->
+        <!--<parameter name="browserVersion" value="59.0.3071.115" />-->
+        <!--<parameter name="remoteIP" value="192.168.99.100" />-->
+        <!--<parameter name="appURL" value="https://lfwiseopertest02.hwcloudtest.cn:8443/"/>-->
+        <!--<classes>-->
+            <!--<class name="test.ApplyContinueTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 </suite>
 

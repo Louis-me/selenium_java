@@ -23,10 +23,10 @@ public class ApplyContinueTest  {
     private String browserType;
 
 
-    @Parameters({ "browserType", "appURL" ,"driverPath","browserVersion", "remoteIP"})
+    @Parameters({ "browserType", "appURL" ,"browserVersion", "remoteIP"})
     @BeforeClass
-    public  void setUp(String browserType, String appURL, String driverPath, String browserVersion, String remoteIP) {
-        driver = testBaseSetup.setDriver(browserType, appURL, driverPath,browserVersion, remoteIP);
+    public  void setUp(String browserType, String appURL, String browserVersion, String remoteIP) {
+        driver = testBaseSetup.setDriver(browserType, appURL,browserVersion, remoteIP);
         this.browserType = browserType;
     }
 
