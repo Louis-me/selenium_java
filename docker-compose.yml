@@ -1,24 +1,44 @@
-# 输入命令：docker-compose up 下载并启动镜像
-
-hub:
+--- 
+chrome: 
+  image: chinese_chrome
+  links: 
+    - hub
+  ports: 
+    - "5902:5900"
+  environment: 
+    - NODE_MAX_INSTANCES=30
+    - NODE_MAX_SESSION=30
+    - NODE_REGISTER_CYCLE=5000
+    - DBUS_SESSION_BUS_ADDRESS=/dev/null
+  volumes:
+    - /dev/shm:/dev/shm
+firefox52: 
+  image: "baozhida/selenium-node-firefox:52"
+  links: 
+    - hub
+  ports: 
+    - "5903:5900"
+  environment: 
+    - NODE_MAX_INSTANCES=30
+    - NODE_MAX_SESSION=30
+    - NODE_REGISTER_CYCLE=5000
+    - DBUS_SESSION_BUS_ADDRESS=/dev/null
+  volumes:
+    - /dev/shm:/dev/shm
+firefox51: 
+  image: "baozhida/selenium-node-firefox:51"
+  links: 
+    - hub
+  ports: 
+    - "5901:5900"
+  environment: 
+    - NODE_MAX_INSTANCES=30
+    - NODE_MAX_SESSION=30
+    - NODE_REGISTER_CYCLE=5000
+    - DBUS_SESSION_BUS_ADDRESS=/dev/null
+  volumes:
+    - /dev/shm:/dev/shm
+hub: 
   image: selenium/hub
-  ports:
+  ports: 
     - "4444:4444"
-firefox:
-  image: selenium/node-firefox
-  ports:
-    - 5901:5900
-  links:
-    - hub
-chrome:
-  image: selenium/node-chrome
-  ports:
-    - 5902:5900
-  links:
-    - hub
-node-chrome-debug:
-  image: selenium/node-chrome-debug
-  ports:
-    - 5900:5900
-  links:
-    - hub
